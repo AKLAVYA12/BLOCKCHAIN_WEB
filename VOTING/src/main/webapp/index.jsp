@@ -5,11 +5,11 @@
 <%
 
     String ACCOUNT_SID = "ACa2658d5ed56945ce04480236c829aad7";
-    String AUTH_TOKEN = "e1d0631078a374b4ca150ee1761895dc";
+    String AUTH_TOKEN = "c69699c988ac087d0ee58841be8bfc36";
 
     Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
 
-    String phoneNumber = request.getParameter("phone");
+    String phoneNumber = request.getParameter("number");
 
     String phoneNumber1 = "+91"+phoneNumber;
     

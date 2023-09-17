@@ -27,5 +27,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/xdazi/Downloads/MONEY-SHARING-main/MONEY-SHARING-main/Split_sharing/src/main/webapp/WEB-INF/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/Users/xdazi/Downloads/MONEY-SHARING-main/MONEY-SHARING-main/Split_sharing/src/main/webapp/WEB-INF/lib/mysql-connector-j-8.0.34.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
