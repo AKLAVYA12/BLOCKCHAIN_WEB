@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import="com.twilio.Twilio" %>
+<%@ page import="com.twilio.*" %>
 
 <%
     String generatedOTP = request.getParameter("generated_otp");

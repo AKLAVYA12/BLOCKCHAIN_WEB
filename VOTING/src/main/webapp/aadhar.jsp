@@ -7,6 +7,17 @@
 <title>Insert title here</title>
 </head>
 <body>
-HI
+    <h1>Username Registration</h1>
+    <form id="usernameForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <button type="button" id="registerButton">Register</button>
+    </form>
+
+    <div id="message"></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.2/web3.min.js"></script>
+
+    <script src="back.js"></script>
 </body>
 </html>
