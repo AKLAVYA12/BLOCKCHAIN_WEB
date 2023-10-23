@@ -1,28 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="index.css">
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+  <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <title>Blockchain Voting System</title>
 </head>
 <body class="hell">
+  <h1>BLOCKCHAIN-VOTING SYSTEM</h1>
 
+  <form class="form" action="index.jsp" method="post" onsubmit="return checkPasswordMatch()">
+    <label style="color: white;">Name:</label>
+    <input type="text" name="name" placeholder="Enter here" id="name"><br>
 
-<h1>BLOCKCHAIN-VOTING SYSTEM</h1>
+    <label style="color: white;">AADHAR:</label>
+    <input name="aadhar" type="number" placeholder="Enter here" id="aadhar"><br>
 
-<form class="form" action="register.jsp" method="post" >
+    <label style="color: white;">Phone NO:</label>
+    <input type="number" name="phone" placeholder="Enter here" id="phone"><br>
 
-<label style="color: white;">Name:</label>
-<input type="text" name="name" placeholder="Enter here" id="name" ><br>
-<label style="color: white;">AADHAR:</label>
-<input name="aadhar" type="number" placeholder="Enter here" id="aadhar" ><br>
-<label style="color: white;">Phone.NO:</label>
-<input type="number" name="number" placeholder="Enter here" id="number"  pattern="[0-9]*"><br>
+    <label style="color: white;">Password:</label>
+    <input type="password" name="password" placeholder="Enter here" id="password"><br>
 
-<button>SUBMIT</button>
+    <label style="color: white;">Reenter Password:</label>
+    <input type="password" name="password1" placeholder="Enter here" id="password1"><br>
 
-</form>
+    <div id="message"></div> <!-- Add a message element -->
 
+    <input type="submit" value="Submit">
+  </form>
 
+  <script>
+    function checkPasswordMatch() {
+      var password = document.getElementById("password").value;
+      var password1 = document.getElementById("password1").value;
+      var messageElement = document.getElementById("message");
+
+      if (password === password1) {
+        messageElement.textContent = "Passwords match!";
+        messageElement.style.color = "green";
+        return true; // Allow form submission
+      } else {
+        messageElement.textContent = "Passwords do not match!";
+        messageElement.style.color = "red";
+        return false; // Prevent form submission
+      }
+    }
+  </script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.2/web3.min.js"></script>
+
+    <script src="back.js"></script>
 </body>
 </html>

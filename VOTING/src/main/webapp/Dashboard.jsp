@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,11 +9,11 @@
 </head>
 <body>
     <h1>Username Registration</h1>
-    <form id="usernameForm">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <button type="button" id="registerButton">Register</button>
-    </form>
+    
+    <h1>Aadhar Details</h1>
+    <p>Name: <%= request.getParameter("name") %></p>
+    <p>Aadhar Number: <%= request.getParameter("aadhar") %></p>
+    <p>Password: <%= request.getParameter("password") %></p>
 
     <div id="message"></div>
     
